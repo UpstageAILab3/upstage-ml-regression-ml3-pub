@@ -1,0 +1,101 @@
+Step 2: Data Preprocessing Functions - Completed
+Step 3: Custom Dataset Class for PyTorch - Completed
+Step 4: Define the PyTorch Model - Completed
+Step 5: Training and Inference Functions - Completed
+2024-07-18 23:52:13.633255 - Imputed missing values in 대장아파트_거리 with median value 1.148094654083252
+2024-07-18 23:52:13.817585 - Imputed missing values in 대장아파트_거리 with median value 1.1647236347198486
+Final train_data shape: (1115687, 13548)
+Final test_data shape: (9260, 13548)
+2024-07-18 23:52:48.311607 - Create dataset instances...Done
+2024-07-18 23:52:48.311971 - Create data loaders...Done
+Model is using GPU
+Checkpoint saved at batch 100 of epoch 1
+Checkpoint saved at batch 200 of epoch 1
+Checkpoint saved at batch 300 of epoch 1
+Checkpoint saved at batch 400 of epoch 1
+Checkpoint saved at batch 500 of epoch 1
+Checkpoint saved at batch 600 of epoch 1
+Checkpoint saved at batch 700 of epoch 1
+Checkpoint saved at batch 800 of epoch 1
+Checkpoint saved at batch 900 of epoch 1
+Checkpoint saved at batch 1000 of epoch 1
+Checkpoint saved at batch 1100 of epoch 1
+Checkpoint saved at batch 1200 of epoch 1
+Checkpoint saved at batch 1300 of epoch 1
+Checkpoint saved at batch 1400 of epoch 1
+Checkpoint saved at batch 1500 of epoch 1
+Checkpoint saved at batch 1600 of epoch 1
+Checkpoint saved at batch 1700 of epoch 1
+Checkpoint saved at batch 1800 of epoch 1
+Checkpoint saved at batch 1900 of epoch 1
+Checkpoint saved at batch 2000 of epoch 1
+Checkpoint saved at batch 2100 of epoch 1
+Checkpoint saved at batch 2200 of epoch 1
+Checkpoint saved at batch 2300 of epoch 1
+Checkpoint saved at batch 2400 of epoch 1
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.5th.py", line 409, in <module>
+    trained_model, rmse_history, batch_rmse_history = train_model(model, train_dataloader, criterion, optimizer, num_epochs=num_epochs)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.5th.py", line 252, in train_model
+    for batch_idx, (inputs, targets) in enumerate(dataloader):
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.5th.py", line 200, in __getitem__
+    sample = self.dataframe.iloc[idx]
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1073, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1627, in _getitem_axis
+    return self.obj._ixs(key, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/frame.py", line 3716, in _ixs
+    new_mgr = self._mgr.fast_xs(i)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 1097, in fast_xs
+    dtype = interleaved_dtype([blk.dtype for blk in self.blocks])
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/internals/base.py", line 226, in interleaved_dtype
+    return find_common_type(dtypes)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/dtypes/cast.py", line 1613, in find_common_type
+    if lib.dtypes_all_equal(list(types)):
+  File "pandas/_libs/lib.pyx", line 3142, in pandas._libs.lib.dtypes_all_equal
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/arrays/sparse/dtype.py", line 117, in __eq__
+    subtype = self.subtype == other.subtype
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/arrays/sparse/dtype.py", line 192, in subtype
+    @property
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.5th.py", line 409, in <module>
+    trained_model, rmse_history, batch_rmse_history = train_model(model, train_dataloader, criterion, optimizer, num_epochs=num_epochs)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.5th.py", line 252, in train_model
+    for batch_idx, (inputs, targets) in enumerate(dataloader):
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.5th.py", line 200, in __getitem__
+    sample = self.dataframe.iloc[idx]
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1073, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1627, in _getitem_axis
+    return self.obj._ixs(key, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/frame.py", line 3716, in _ixs
+    new_mgr = self._mgr.fast_xs(i)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 1097, in fast_xs
+    dtype = interleaved_dtype([blk.dtype for blk in self.blocks])
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/internals/base.py", line 226, in interleaved_dtype
+    return find_common_type(dtypes)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/dtypes/cast.py", line 1613, in find_common_type
+    if lib.dtypes_all_equal(list(types)):
+  File "pandas/_libs/lib.pyx", line 3142, in pandas._libs.lib.dtypes_all_equal
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/arrays/sparse/dtype.py", line 117, in __eq__
+    subtype = self.subtype == other.subtype
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/arrays/sparse/dtype.py", line 192, in subtype
+    @property
+KeyboardInterrupt

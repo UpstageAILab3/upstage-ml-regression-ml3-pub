@@ -1,0 +1,1 @@
+{"epoch": 1, "batch_idx": 32110, "batch_rmse": 2907719434502144.0, "_timestamp": 1721340845.3558705, "_runtime": 13399.086564540863, "_step": 6706, "epoch_rmse": 3380417522081152.5, "_wandb": {"runtime": 13398}}

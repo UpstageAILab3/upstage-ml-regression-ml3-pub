@@ -1,0 +1,54 @@
+Step 2: Data Preprocessing Functions - Completed
+Step 3: Custom Dataset Class for PyTorch - Completed
+Step 4: Define the PyTorch Model - Completed
+Step 5: Training and Inference Functions - Completed
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/nanops.py", line 760, in nanmedian
+    values = values.astype("f8")
+ValueError: could not convert string to float: '658-1'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 350, in <module>
+    train_data = preprocess_data(train_data, include_target=True)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 152, in preprocess_data
+    df = impute_missing_values(df)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 92, in impute_missing_values
+    median_value = df[column].median()
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/generic.py", line 11917, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/generic.py", line 11413, in median
+    return self._stat_function(
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/generic.py", line 11353, in _stat_function
+    return self._reduce(
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/series.py", line 4816, in _reduce
+    return op(delegate, skipna=skipna, **kwds)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/nanops.py", line 155, in f
+    result = alt(values, axis=axis, skipna=skipna, **kwds)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/nanops.py", line 763, in nanmedian
+    raise TypeError(str(err)) from err
+TypeError: could not convert string to float: '658-1'
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/nanops.py", line 760, in nanmedian
+    values = values.astype("f8")
+ValueError: could not convert string to float: '658-1'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 350, in <module>
+    train_data = preprocess_data(train_data, include_target=True)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 152, in preprocess_data
+    df = impute_missing_values(df)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 92, in impute_missing_values
+    median_value = df[column].median()
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/generic.py", line 11917, in median
+    return NDFrame.median(self, axis, skipna, level, numeric_only, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/generic.py", line 11413, in median
+    return self._stat_function(
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/generic.py", line 11353, in _stat_function
+    return self._reduce(
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/series.py", line 4816, in _reduce
+    return op(delegate, skipna=skipna, **kwds)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/nanops.py", line 155, in f
+    result = alt(values, axis=axis, skipna=skipna, **kwds)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/nanops.py", line 763, in nanmedian
+    raise TypeError(str(err)) from err
+TypeError: could not convert string to float: '658-1'

@@ -1,0 +1,38 @@
+
+2024-07-18 18:25:57.798644 - Imputed missing values in 대장아파트_거리 with median value 1.148094654083252
+2024-07-18 18:26:00.073429 - Imputed missing values in 대장아파트_거리 with median value 1.1689651012420654
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 343, in <module>
+    trained_model, rmse_history, batch_rmse_history = train_model(model, train_dataloader, criterion, optimizer, num_epochs=num_epochs)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 164, in train_model
+    for batch_idx, (inputs, targets) in enumerate(dataloader):
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 135, in __getitem__
+    return torch.tensor(features, dtype=torch.float32), torch.tensor(target, dtype=torch.float32)
+TypeError: can't convert np.ndarray of type numpy.object_. The only supported types are: float64, float32, float16, complex64, complex128, int64, int32, int16, int8, uint8, and bool.
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 343, in <module>
+    trained_model, rmse_history, batch_rmse_history = train_model(model, train_dataloader, criterion, optimizer, num_epochs=num_epochs)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 164, in train_model
+    for batch_idx, (inputs, targets) in enumerate(dataloader):
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 135, in __getitem__
+    return torch.tensor(features, dtype=torch.float32), torch.tensor(target, dtype=torch.float32)
+TypeError: can't convert np.ndarray of type numpy.object_. The only supported types are: float64, float32, float16, complex64, complex128, int64, int32, int16, int8, uint8, and bool.
+2024-07-18 18:26:45.363048 - Create dataset instances...Done
+2024-07-18 18:26:45.363455 - Create data loaders...Done
+Model is using GPU

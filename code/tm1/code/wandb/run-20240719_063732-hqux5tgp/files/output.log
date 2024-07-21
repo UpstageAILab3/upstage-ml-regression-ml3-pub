@@ -1,0 +1,180 @@
+Step 2: Data Preprocessing Functions - Completed
+Step 3: Custom Dataset Class for PyTorch - Completed
+Step 4: Define the PyTorch Model - Completed
+Step 5: Training and Inference Functions - Completed
+2024-07-19 06:37:51.502527 - Imputed missing values in 대장아파트_거리 with median value 1.148094654083252
+2024-07-19 06:37:51.762364 - Imputed missing values in 대장아파트_거리 with median value 1.1647236347198486
+Final train_data shape: (1115687, 13183)
+Final test_data shape: (9260, 13183)
+2024-07-19 06:38:24.530759 - Create dataset instances...Done
+2024-07-19 06:38:24.531130 - Create data loaders...Done
+Model is using GPU
+Resuming training from epoch 1
+Batch 0: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 1: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 2: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 3: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 4: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 5: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 6: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 7: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 8: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 9: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 10: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 11: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 12: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 13: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 14: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 15: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 16: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 17: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 18: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 19: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 20: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 21: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 22: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 23: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 24: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 25: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 26: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 27: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 28: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 29: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 30: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 31: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 32: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 33: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 34: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 35: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 36: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 37: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 38: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 39: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 40: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 41: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 42: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 43: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 44: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 45: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 46: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 47: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 48: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 49: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 50: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 51: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 52: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 53: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 54: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 55: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 56: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 57: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 58: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 59: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 60: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 61: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 62: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 63: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 64: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 65: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 66: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 67: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 68: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 69: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 70: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 71: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 72: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 73: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 74: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 75: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 76: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 77: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 78: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 79: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 80: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 81: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 82: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 83: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 84: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 85: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 86: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 87: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 88: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 89: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 90: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 91: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 92: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 93: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 94: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 95: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 96: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 97: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 98: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 99: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Checkpoint saved at batch 100 of epoch 2
+Batch 100: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 101: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 102: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 103: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 104: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 105: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Batch 106: outputs size = torch.Size([32, 64]), targets size = torch.Size([32])
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.7th.py", line 404, in <module>
+    trained_model, rmse_history, batch_rmse_history = train_model(model, train_dataloader, criterion, optimizer, num_epochs=num_epochs)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.7th.py", line 237, in train_model
+    for batch_idx, (inputs, targets) in enumerate(dataloader):
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.7th.py", line 185, in __getitem__
+    sample = self.dataframe.iloc[idx]
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1073, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1627, in _getitem_axis
+    return self.obj._ixs(key, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/frame.py", line 3716, in _ixs
+    new_mgr = self._mgr.fast_xs(i)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 1120, in fast_xs
+    result[rl] = blk.iget((i, loc))
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/internals/blocks.py", line 1670, in iget
+    return self.values[loc]
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/arrays/sparse/array.py", line 980, in __getitem__
+    return self._get_val_at(key)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/arrays/sparse/array.py", line 1068, in _get_val_at
+    sp_loc = self.sp_index.lookup(loc)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.7th.py", line 404, in <module>
+    trained_model, rmse_history, batch_rmse_history = train_model(model, train_dataloader, criterion, optimizer, num_epochs=num_epochs)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.7th.py", line 237, in train_model
+    for batch_idx, (inputs, targets) in enumerate(dataloader):
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.7th.py", line 185, in __getitem__
+    sample = self.dataframe.iloc[idx]
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1073, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1627, in _getitem_axis
+    return self.obj._ixs(key, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/frame.py", line 3716, in _ixs
+    new_mgr = self._mgr.fast_xs(i)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 1120, in fast_xs
+    result[rl] = blk.iget((i, loc))
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/internals/blocks.py", line 1670, in iget
+    return self.values[loc]
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/arrays/sparse/array.py", line 980, in __getitem__
+    return self._get_val_at(key)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/arrays/sparse/array.py", line 1068, in _get_val_at
+    sp_loc = self.sp_index.lookup(loc)
+KeyboardInterrupt

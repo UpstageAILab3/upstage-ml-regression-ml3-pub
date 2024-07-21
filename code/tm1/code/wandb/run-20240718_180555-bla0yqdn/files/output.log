@@ -1,0 +1,107 @@
+
+2024-07-18 18:07:00.807365 - Imputed missing values in 대장아파트_거리 with median value 10015.45703125
+2024-07-18 18:07:03.131327 - Imputed missing values in 대장아파트_거리 with median value 10016.3232421875
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 649, in parse
+    ret = self._build_naive(res, default)
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1235, in _build_naive
+    naive = default.replace(**repl)
+ValueError: day is out of range for month
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "pandas/_libs/tslib.pyx", line 605, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslibs/parsing.pyx", line 318, in pandas._libs.tslibs.parsing.parse_datetime_string
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1368, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 651, in parse
+    six.raise_from(ParserError(str(e) + ": %s", timestr), e)
+  File "<string>", line 3, in raise_from
+dateutil.parser._parser.ParserError: day is out of range for month: 0.4333906555287614401
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "pandas/_libs/tslib.pyx", line 616, in pandas._libs.tslib.array_to_datetime
+TypeError: invalid string coercion to datetime for "0.4333906555287614401" at position 0
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 649, in parse
+    ret = self._build_naive(res, default)
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1235, in _build_naive
+    naive = default.replace(**repl)
+ValueError: day is out of range for month
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 318, in <module>
+    train_data = process_contract_date(train_data)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 313, in process_contract_date
+    data['계약년월일'] = pd.to_datetime(data['계약년월일'])
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/tools/datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/tools/datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/tools/datetimes.py", line 438, in _convert_listlike_datetimes
+    result, tz_parsed = objects_to_datetime64ns(
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/arrays/datetimes.py", line 2177, in objects_to_datetime64ns
+    result, tz_parsed = tslib.array_to_datetime(
+  File "pandas/_libs/tslib.pyx", line 427, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslib.pyx", line 683, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslib.pyx", line 829, in pandas._libs.tslib._array_to_datetime_object
+  File "pandas/_libs/tslib.pyx", line 819, in pandas._libs.tslib._array_to_datetime_object
+  File "pandas/_libs/tslibs/parsing.pyx", line 318, in pandas._libs.tslibs.parsing.parse_datetime_string
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1368, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 651, in parse
+    six.raise_from(ParserError(str(e) + ": %s", timestr), e)
+  File "<string>", line 3, in raise_from
+dateutil.parser._parser.ParserError: day is out of range for month: 0.4333906555287614401 present at position 0
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 649, in parse
+    ret = self._build_naive(res, default)
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1235, in _build_naive
+    naive = default.replace(**repl)
+ValueError: day is out of range for month
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "pandas/_libs/tslib.pyx", line 605, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslibs/parsing.pyx", line 318, in pandas._libs.tslibs.parsing.parse_datetime_string
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1368, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 651, in parse
+    six.raise_from(ParserError(str(e) + ": %s", timestr), e)
+  File "<string>", line 3, in raise_from
+dateutil.parser._parser.ParserError: day is out of range for month: 0.4333906555287614401
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "pandas/_libs/tslib.pyx", line 616, in pandas._libs.tslib.array_to_datetime
+TypeError: invalid string coercion to datetime for "0.4333906555287614401" at position 0
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 649, in parse
+    ret = self._build_naive(res, default)
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1235, in _build_naive
+    naive = default.replace(**repl)
+ValueError: day is out of range for month
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 318, in <module>
+    train_data = process_contract_date(train_data)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 313, in process_contract_date
+    data['계약년월일'] = pd.to_datetime(data['계약년월일'])
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/tools/datetimes.py", line 1064, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/tools/datetimes.py", line 229, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/tools/datetimes.py", line 438, in _convert_listlike_datetimes
+    result, tz_parsed = objects_to_datetime64ns(
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/arrays/datetimes.py", line 2177, in objects_to_datetime64ns
+    result, tz_parsed = tslib.array_to_datetime(
+  File "pandas/_libs/tslib.pyx", line 427, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslib.pyx", line 683, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslib.pyx", line 829, in pandas._libs.tslib._array_to_datetime_object
+  File "pandas/_libs/tslib.pyx", line 819, in pandas._libs.tslib._array_to_datetime_object
+  File "pandas/_libs/tslibs/parsing.pyx", line 318, in pandas._libs.tslibs.parsing.parse_datetime_string
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1368, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 651, in parse
+    six.raise_from(ParserError(str(e) + ": %s", timestr), e)
+  File "<string>", line 3, in raise_from
+dateutil.parser._parser.ParserError: day is out of range for month: 0.4333906555287614401 present at position 0

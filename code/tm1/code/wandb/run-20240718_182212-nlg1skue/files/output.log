@@ -1,0 +1,15 @@
+
+2024-07-18 18:23:25.572299 - Imputed missing values in 대장아파트_거리 with median value 1.148094654083252
+2024-07-18 18:23:27.820397 - Imputed missing values in 대장아파트_거리 with median value 1.1689651012420654
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 320, in <module>
+    train_data = remove_outliers(train_data)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 306, in remove_outliers
+    z_scores = np.abs(stats.zscore(df.loc[mask, 'target']))
+NameError: name 'stats' is not defined
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 320, in <module>
+    train_data = remove_outliers(train_data)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 306, in remove_outliers
+    z_scores = np.abs(stats.zscore(df.loc[mask, 'target']))
+NameError: name 'stats' is not defined

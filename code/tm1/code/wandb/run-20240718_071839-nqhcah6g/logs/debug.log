@@ -1,0 +1,29 @@
+2024-07-18 07:18:39,352 INFO    MainThread:120970 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-18 07:18:39,352 INFO    MainThread:120970 [wandb_setup.py:_flush():76] Configure stats pid to 120970
+2024-07-18 07:18:39,352 INFO    MainThread:120970 [wandb_setup.py:_flush():76] Loading settings from /data/ephemeral/home/.config/wandb/settings
+2024-07-18 07:18:39,352 INFO    MainThread:120970 [wandb_setup.py:_flush():76] Loading settings from /data/ephemeral/home/code/wandb/settings
+2024-07-18 07:18:39,352 INFO    MainThread:120970 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-18 07:18:39,352 INFO    MainThread:120970 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-18 07:18:39,352 INFO    MainThread:120970 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'Team3-DTQ_code.trial.first.py', 'program_abspath': '/data/ephemeral/home/code/Team3-DTQ_code.trial.first.py', 'program': '/data/ephemeral/home/code/Team3-DTQ_code.trial.first.py'}
+2024-07-18 07:18:39,352 INFO    MainThread:120970 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-18 07:18:39,352 INFO    MainThread:120970 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-07-18 07:18:39,353 INFO    MainThread:120970 [wandb_init.py:_log_setup():529] Logging user logs to /data/ephemeral/home/code/wandb/run-20240718_071839-nqhcah6g/logs/debug.log
+2024-07-18 07:18:39,353 INFO    MainThread:120970 [wandb_init.py:_log_setup():530] Logging internal logs to /data/ephemeral/home/code/wandb/run-20240718_071839-nqhcah6g/logs/debug-internal.log
+2024-07-18 07:18:39,353 INFO    MainThread:120970 [wandb_init.py:init():569] calling init triggers
+2024-07-18 07:18:39,353 INFO    MainThread:120970 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'learning_rate': 0.015, 'num_epochs': 3, 'hidden_units': [64], 'dropout_type': 'normal', 'hidden_activation': 'prelu', 'early_stopping': 3, 'max_batch_size': 131072, 'optimizer_type': 'adam', 'loss_function': 'mean_squared_error'}
+2024-07-18 07:18:39,353 INFO    MainThread:120970 [wandb_init.py:init():619] starting backend
+2024-07-18 07:18:39,353 INFO    MainThread:120970 [wandb_init.py:init():623] setting up manager
+2024-07-18 07:18:39,357 INFO    MainThread:120970 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-18 07:18:39,358 INFO    MainThread:120970 [wandb_init.py:init():631] backend started and connected
+2024-07-18 07:18:39,362 INFO    MainThread:120970 [wandb_init.py:init():720] updated telemetry
+2024-07-18 07:18:39,362 INFO    MainThread:120970 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-18 07:18:39,845 ERROR   MainThread:120970 [wandb_init.py:init():779] encountered error: you may not log runs directly to your organization, please try using your team entity (Error 400: Bad Request)
+2024-07-18 07:18:39,845 ERROR   MainThread:120970 [wandb_init.py:init():1191] error in wandb.init()
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    return wi.init()
+  File "/opt/conda/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: you may not log runs directly to your organization, please try using your team entity (Error 400: Bad Request)
+2024-07-18 07:18:41,063 WARNING MsgRouterThr:120970 [router.py:message_loop():77] message_loop has been closed

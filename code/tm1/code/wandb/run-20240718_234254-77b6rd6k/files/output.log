@@ -1,0 +1,5 @@
+Step 2: Data Preprocessing Functions - Completed
+Step 3: Custom Dataset Class for PyTorch - Completed
+Step 4: Define the PyTorch Model - Completed
+Step 5: Training and Inference Functions - Completed
+2024-07-18 23:43:13.269718 - Imputed missing values in 대장아파트_거리 with mode value 0.007370155304670334

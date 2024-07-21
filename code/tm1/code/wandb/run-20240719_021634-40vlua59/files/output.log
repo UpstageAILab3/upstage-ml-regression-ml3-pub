@@ -1,0 +1,43 @@
+Step 2: Data Preprocessing Functions - Completed
+Step 3: Custom Dataset Class for PyTorch - Completed
+Step 4: Define the PyTorch Model - Completed
+Step 5: Training and Inference Functions - Completed
+2024-07-19 02:16:53.383202 - Imputed missing values in 대장아파트_거리 with median value 1.148094654083252
+2024-07-19 02:16:53.644059 - Imputed missing values in 대장아파트_거리 with median value 1.1647236347198486
+Final train_data shape: (1115687, 13183)
+Final test_data shape: (9260, 13183)
+2024-07-19 02:17:26.316329 - Create dataset instances...Done
+2024-07-19 02:17:26.316700 - Create data loaders...Done
+Model is using GPU
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.6th.py", line 394, in <module>
+    trained_model, rmse_history, batch_rmse_history = train_model(model, train_dataloader, criterion, optimizer, num_epochs=num_epochs)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.6th.py", line 242, in train_model
+    loss = criterion(outputs, targets)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 535, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/functional.py", line 3328, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+  File "/opt/conda/lib/python3.10/site-packages/torch/functional.py", line 73, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+RuntimeError: The size of tensor a (64) must match the size of tensor b (32) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.6th.py", line 394, in <module>
+    trained_model, rmse_history, batch_rmse_history = train_model(model, train_dataloader, criterion, optimizer, num_epochs=num_epochs)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.6th.py", line 242, in train_model
+    loss = criterion(outputs, targets)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 535, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/functional.py", line 3328, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+  File "/opt/conda/lib/python3.10/site-packages/torch/functional.py", line 73, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+RuntimeError: The size of tensor a (64) must match the size of tensor b (32) at non-singleton dimension 1

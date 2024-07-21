@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 150, in <module>
+    train_data = preprocess_data(train_data)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 133, in preprocess_data
+    df = optimize_dtypes(df)
+NameError: name 'optimize_dtypes' is not defined. Did you mean: 'optimizer_type'?
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 150, in <module>
+    train_data = preprocess_data(train_data)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 133, in preprocess_data
+    df = optimize_dtypes(df)
+NameError: name 'optimize_dtypes' is not defined. Did you mean: 'optimizer_type'?

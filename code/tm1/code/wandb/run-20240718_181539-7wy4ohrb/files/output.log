@@ -1,0 +1,41 @@
+
+2024-07-18 18:16:42.965549 - Imputed missing values in 대장아파트_거리 with median value 1.148094654083252
+2024-07-18 18:16:45.248232 - Imputed missing values in 대장아파트_거리 with median value 1.1689651012420654
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '계약년월일'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 320, in <module>
+    train_data = remove_outliers(train_data)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 305, in remove_outliers
+    mask = (df['계약년월일'] >= '2021-01-01') & (df['계약년월일'] <= '2022-01-31')
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: '계약년월일'
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '계약년월일'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 320, in <module>
+    train_data = remove_outliers(train_data)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.third.py", line 305, in remove_outliers
+    mask = (df['계약년월일'] >= '2021-01-01') & (df['계약년월일'] <= '2022-01-31')
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: '계약년월일'

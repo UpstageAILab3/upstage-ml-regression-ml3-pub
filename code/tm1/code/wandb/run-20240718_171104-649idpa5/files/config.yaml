@@ -1,0 +1,61 @@
+wandb_version: 1
+
+batch_size:
+  desc: null
+  value: 32
+learning_rate:
+  desc: null
+  value: 0.015
+num_epochs:
+  desc: null
+  value: 3
+hidden_units:
+  desc: null
+  value:
+  - 64
+dropout_type:
+  desc: null
+  value: normal
+hidden_activation:
+  desc: null
+  value: prelu
+early_stopping:
+  desc: null
+  value: 3
+max_batch_size:
+  desc: null
+  value: 131072
+optimizer_type:
+  desc: null
+  value: adam
+loss_function:
+  desc: null
+  value: mean_squared_error
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.13
+    cli_version: 0.17.4
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1721322664
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.10.13
+      5: 0.17.4
+      8:
+      - 5
+      13: linux-x86_64

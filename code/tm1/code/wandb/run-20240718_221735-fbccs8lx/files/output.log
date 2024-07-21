@@ -1,0 +1,61 @@
+Step 2: Data Preprocessing Functions - Completed
+Step 3: Custom Dataset Class for PyTorch - Completed
+Step 4: Define the PyTorch Model - Completed
+Step 5: Training and Inference Functions - Completed
+2024-07-18 22:17:54.004866 - Imputed missing values in 번지 with mode value 13
+2024-07-18 22:17:54.115226 - Imputed missing values in 아파트명 with mode value 현대
+2024-07-18 22:17:54.223116 - Imputed missing values in 대장아파트_거리 with mode value 10025.529296875
+2024-07-18 22:18:39.396593 - Imputed missing values in 번지 with mode value 913
+2024-07-18 22:18:39.398172 - Imputed missing values in 아파트명 with mode value 현대
+2024-07-18 22:18:39.400393 - Imputed missing values in 대장아파트_거리 with mode value 10026.83984375
+2024-07-18 22:19:30.292753 - Create dataset instances...Done
+2024-07-18 22:19:30.293129 - Create data loaders...Done
+Model is using GPU
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 380, in <module>
+    trained_model, rmse_history, batch_rmse_history = train_model(model, train_dataloader, criterion, optimizer, num_epochs=num_epochs)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 243, in train_model
+    for batch_idx, (inputs, targets) in enumerate(dataloader):
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 191, in __getitem__
+    sample = self.dataframe.iloc[idx]
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1073, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1627, in _getitem_axis
+    return self.obj._ixs(key, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/frame.py", line 3716, in _ixs
+    new_mgr = self._mgr.fast_xs(i)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 1120, in fast_xs
+    result[rl] = blk.iget((i, loc))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 380, in <module>
+    trained_model, rmse_history, batch_rmse_history = train_model(model, train_dataloader, criterion, optimizer, num_epochs=num_epochs)
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 243, in train_model
+    for batch_idx, (inputs, targets) in enumerate(dataloader):
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/ephemeral/home/code/Team3-DTQ_code.trial.4th.py", line 191, in __getitem__
+    sample = self.dataframe.iloc[idx]
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1073, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/indexing.py", line 1627, in _getitem_axis
+    return self.obj._ixs(key, axis=axis)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/frame.py", line 3716, in _ixs
+    new_mgr = self._mgr.fast_xs(i)
+  File "/opt/conda/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 1120, in fast_xs
+    result[rl] = blk.iget((i, loc))
+KeyboardInterrupt

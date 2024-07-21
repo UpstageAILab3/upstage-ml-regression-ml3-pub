@@ -909,8 +909,7 @@ TBD
 
 
 ### Presentation
-
-- TBD
+- [UpStageAILAB-1st-Competition-ML-REGRESSION-Presentation-TEAM3-20240722.pptx](https://docs.google.com/presentation/d/1iltGXim8d76wyGYrOvsqiViW75pLsv-1/edit?usp=sharing&ouid=102302788798357252978&rtpof=true&sd=true)
 
 ## etc
 

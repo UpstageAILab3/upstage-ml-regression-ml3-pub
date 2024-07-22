@@ -741,8 +741,12 @@ Residual Network는 입력을 모델의 출력과 더하여 학습을 돕는 잔
 1. [(공유) 도메인 지식을 기반으로 Geo 정보를 활용하는 방법](https://stages.ai/en/competitions/312/board/community/post/2712)
 2. [(공유) 아파트 거래에는 어떤 이상치가 있을까?](https://stages.ai/en/competitions/312/board/community/post/2713)
 
-### 5.6. XGBoost(백경탁)
+### 5.6. RandomForestRegressor(백경탁)
 
+#### Baseline Code 수정하여 모델별 성능 비교 : 
+* LGBMRegressor
+* RandomForestRegressor
+  
 #### Daily Log 
 
 ##### 2024.07.16

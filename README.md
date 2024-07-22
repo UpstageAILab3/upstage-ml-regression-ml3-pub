@@ -8,6 +8,12 @@
 |            [박석](https://github.com/parksurk)             |            [백경탁](https://github.com/UpstageAILab)             |            [한아름](https://github.com/UpstageAILab)             |            [이승현](https://github.com/UpstageAILab)             |            [이한국](https://github.com/UpstageAILab)             |
 |                            Lead, R&D                             |                            R&D                             |                            R&D                             |                            R&D                             |                            R&D                             |
 
+![박석](./images/team-member-ps.png)
+![백경탁](./images/team-member-pkt.png)
+![한아름](./images/team-member-har.png)
+![이승현](./images/team-member-lsh.png)
+![이한국](./images/team-member-lhk.png)
+
 ## Table of Contents
 - ['디지털 보물찾기(Digital Treasure Quest)' 팀의 '아파트 실거래가 예측' 경연 도전기](#디지털-보물찾기digital-treasure-quest-팀의-아파트-실거래가-예측-경연-도전기)
   - [Team](#team)

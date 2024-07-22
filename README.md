@@ -3,7 +3,7 @@
 
 ## Team
 
-| ![박석](https://avatars.githubusercontent.com/u/5678836?v=4) | ![백경탁](https://avatars.githubusercontent.com/u/62689715?v=4) | ![한아름](https://avatars.githubusercontent.com/u/121337152?v=4) | ![이승현]([https://avatars.githubusercontent.com/u/156163982?v=4](https://ibb.co/82XkLN2)) | ![이한국](https://avatars.githubusercontent.com/u/156163982?v=4) |
+| ![박석](https://avatars.githubusercontent.com/u/5678836?v=4) | ![백경탁](https://avatars.githubusercontent.com/u/62689715?v=4) | ![한아름](https://avatars.githubusercontent.com/u/121337152?v=4) | ![이승현](https://avatars.githubusercontent.com/u/156163982?v=4) | ![이한국](https://avatars.githubusercontent.com/u/156163982?v=4) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
 |            [박석](https://github.com/parksurk)             |            [백경탁](https://github.com/UpstageAILab)             |            [한아름](https://github.com/UpstageAILab)             |            [이승현](https://github.com/UpstageAILab)             |            [이한국](https://github.com/UpstageAILab)             |
 |                            Lead, R&D                             |                            R&D                             |                            R&D                             |                            R&D                             |                            R&D                             |

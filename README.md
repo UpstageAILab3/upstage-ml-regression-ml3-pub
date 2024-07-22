@@ -868,7 +868,9 @@ Residual Network는 입력을 모델의 출력과 더하여 학습을 돕는 잔
 - 깃허브는 최종코드 게시 용도로 활용하면 좋다.
 
 ### 5.7. Baseline Code Enhancement(이승현)
-TBD
+- Baseline code를 이용하여 거래 기록이 적은 아파트들은 마지막 거래 가격으로 측정하는 피쳐만 추가해봄
+  
+
 
 ## 6. Result
 

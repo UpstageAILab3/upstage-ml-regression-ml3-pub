@@ -3,7 +3,7 @@
 
 ## Team
 
-| ![박석](https://avatars.githubusercontent.com/u/5678836?v=4) | ![백경탁](https://avatars.githubusercontent.com/u/156163982?v=4) | ![한아름](https://avatars.githubusercontent.com/u/121337152?v=4) | ![이승현](https://avatars.githubusercontent.com/u/156163982?v=4) | ![이한국](https://avatars.githubusercontent.com/u/156163982?v=4) |
+| ![박석](https://avatars.githubusercontent.com/u/5678836?v=4) | ![백경탁](https://avatars.githubusercontent.com/u/62689715?v=4) | ![한아름](https://avatars.githubusercontent.com/u/121337152?v=4) | ![이승현]([https://avatars.githubusercontent.com/u/156163982?v=4](https://ibb.co/82XkLN2)) | ![이한국](https://avatars.githubusercontent.com/u/156163982?v=4) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
 |            [박석](https://github.com/parksurk)             |            [백경탁](https://github.com/UpstageAILab)             |            [한아름](https://github.com/UpstageAILab)             |            [이승현](https://github.com/UpstageAILab)             |            [이한국](https://github.com/UpstageAILab)             |
 |                            Lead, R&D                             |                            R&D                             |                            R&D                             |                            R&D                             |                            R&D                             |
@@ -741,8 +741,12 @@ Residual Network는 입력을 모델의 출력과 더하여 학습을 돕는 잔
 1. [(공유) 도메인 지식을 기반으로 Geo 정보를 활용하는 방법](https://stages.ai/en/competitions/312/board/community/post/2712)
 2. [(공유) 아파트 거래에는 어떤 이상치가 있을까?](https://stages.ai/en/competitions/312/board/community/post/2713)
 
-### 5.6. XGBoost(백경탁)
+### 5.6. RandomForestRegressor(백경탁)
 
+#### Baseline Code 수정하여 모델별 성능 비교 : 
+* LGBMRegressor
+* RandomForestRegressor
+  
 #### Daily Log 
 
 ##### 2024.07.16
@@ -864,7 +868,9 @@ Residual Network는 입력을 모델의 출력과 더하여 학습을 돕는 잔
 - 깃허브는 최종코드 게시 용도로 활용하면 좋다.
 
 ### 5.7. Baseline Code Enhancement(이승현)
-TBD
+- Baseline code를 이용하여 거래 기록이 적은 아파트들은 마지막 거래 가격으로 측정하는 피쳐만 추가해봄
+  
+
 
 ## 6. Result
 
